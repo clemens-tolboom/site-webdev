@@ -23,6 +23,21 @@ a code {
   background-color: $gray-base;
 }
 
+@mixin nav-brand {
+  color: $brand-secondary;
+  font-size: 1.5em;
+  font-weight: normal;
+  vertical-align: baseline;
+  width: initial;
+  word-spacing: -0.17rem;
+  & img {
+    height: 26px;
+    margin-bottom: 1.5px;
+    padding-right: 1px;
+    vertical-align: text-bottom;
+  }
+}
+
 #mainnav {
   color: $white-base;
   ul {
@@ -44,15 +59,27 @@ a code {
     }
   }
   .brand {
-    width: 250px;
-    line-height: 40px;
+    @include nav-brand;
+    // color: $brand-secondary;
+    // font-size: 1.5em;
+    // font-weight: normal;
+    // vertical-align: baseline;
+    // width: initial;
+    // word-spacing: -0.17rem;
+    // & img {
+    //   height: 26px;
+    //   margin-bottom: 1.5px;
+    //   padding-right: 1px;
+    //   vertical-align: text-bottom;
+    // }
   }
 }
 #sidenav {
   .brand {
-    img {
-      width: 250px;
-    }
+    @include nav-brand;
+    // img {
+    //   width: 250px;
+    // }
   }
 }
 
