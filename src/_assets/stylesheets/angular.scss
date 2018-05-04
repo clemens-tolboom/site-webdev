@@ -89,17 +89,3 @@ blockquote {
 .l-content-small {
   padding: 0;
 }
-
-#mainnav {
-  // Copied from main.scss
-  input {
-    font-size: 13px;
-    color: $gray-dark;
-    font-family: $font-family-base;
-    width: 205px;
-  }
-  a {
-    font-family: $font-family-base;
-    font-weight: bold;
-  }
-}
