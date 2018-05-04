@@ -754,7 +754,7 @@ main .content {
     left: 10px;
     width: 18px;
     height: 18px;
-    background-image: url('{% asset_path "logo-no-wordmark.svg" %}');
+    background-image: url('{% asset_path shared/dart/icon/64.png %}');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
