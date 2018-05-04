@@ -25,7 +25,7 @@ a code {
 
 @mixin nav-brand {
   font-family: 'Product Sans', $font-family-base;
-  color: $brand-secondary;
+  color: $logo-blue-dark;
   font-size: 1.5em;
   font-weight: normal;
   vertical-align: baseline;
@@ -34,20 +34,12 @@ a code {
   & img {
     height: 26px;
     margin-bottom: 1.3px;
-    // padding-right: 1px;
+    padding-right: 1px;
     vertical-align: text-bottom;
   }
 }
 
 #mainnav {
-  // color: $gray-base;
-  // ul {
-  //   li {
-  //     a {
-  //       color: $white-base;
-  //     }
-  //   }
-  // }
   .dropdown-menu {
     background-color: $gray-base;
     a:hover, a:focus { background-color: $gray-base; }
@@ -66,9 +58,6 @@ a code {
 #sidenav {
   .brand {
     @include nav-brand;
-    // img {
-    //   width: 250px;
-    // }
   }
 }
 
@@ -132,6 +121,13 @@ body.homepage .get-started-section {
     background: $brand-primary;
     color: white;
     margin: 10px 10px 0 0;
+  }
+}
+
+.slogan {
+  background-color: $brand-primary;
+  h1, h2, h3 {
+    color: white;
   }
 }
 
